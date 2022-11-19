@@ -3,110 +3,115 @@
         
         {
             "Path" : "buildings.shortCut",
-            "Weight": 7,
+            "Value": 7,
             "TransitiveWeights" : []
         },
         {
             "Path" : "buildings.name",
-            "Weight": 9,  
+            "Value": 9,  
             "TransitiveWeights" : []
         },
         {
             "Path" : "buildings.description",
-            "Weight": 5,  
+            "Value": 5,  
             "TransitiveWeights" : []
         },
         
         {
             "Path" : "locks.buildingId",
-            "Weight": 0, 
+            "Value": 0, 
             "TransitiveWeights" : [
                 {
                     "Path": "buildings.name",
-                    "Weight": 8
+                    "Value": 8,
+                    "TransitiveWeights": []
                 },
                 {
                     "Path": "buildings.shortCut",
-                    "Weight": 5
+                    "Value": 5,
+                    "TransitiveWeights": []
                 },
                 {
                     "Path": "buildings.description",
-                    "Weight": 0
+                    "Value": 0,
+                    "TransitiveWeights": []
                 }]
         },
         {
             "Path" : "locks.type",
-            "Weight": 3,
+            "Value": 3,
             "TransitiveWeights" : []
         },
         {
             "Path" : "locks.name",
-            "Weight": 10,
+            "Value": 10,
             "TransitiveWeights" : []
         },
         {
             "Path" : "locks.serialNumber",
-            "Weight": 8,
+            "Value": 8,
             "TransitiveWeights" : []
         },
         {
             "Path" : "locks.floor",
-            "Weight": 6,
+            "Value": 6,
             "TransitiveWeights" : []
         },
         {
             "Path" : "locks.roomNumber",
-            "Weight": 6,
+            "Value": 6,
             "TransitiveWeights" : []
         },
         {
             "Path" : "locks.description",
-            "Weight": 6,
+            "Value": 6,
             "TransitiveWeights" : []
         },
         {
             "Path" : "groups.name",
-            "Weight": 9,
+            "Value": 9,
             "TransitiveWeights" : []
         },
         {
             "Path" : "groups.description",
-            "Weight": 5,
+            "Value": 5,
             "TransitiveWeights" : []
         },
         
         {
             "Path" : "media.groupId",
-            "Weight": 0,
+            "Value": 0,
             "TransitiveWeights" : [
                 {
                     "Path": "group.name",
-                    "Weight": 8
+                    "Value": 8,
+                    "TransitiveWeights": []
                 },
                 {
                     "Path": "group.description",
-                    "Weight": 0
+                    "Value": 0,
+                    "TransitiveWeights": []
                 }
             ]
         },
         {
             "Path" : "media.type",
-            "Weight": 3,
+            "Value": 3,
             "TransitiveWeights" : []
         },
         {
             "Path" : "media.owner",
-            "Weight": 10,
+            "Value": 10,
             "TransitiveWeights" : []
         },
         {
             "Path" : "media.serialNumber",
-            "Weight": 8,
+            "Value": 8,
             "TransitiveWeights" : []
         },
         {
             "Path" : "media.description",
-            "Weight": 6,
+            "Value": 6,
             "TransitiveWeights" : []
         }
     ]

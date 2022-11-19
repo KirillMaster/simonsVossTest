@@ -1,4 +1,5 @@
 using BusinessLogic;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Services;
 
@@ -31,5 +32,12 @@ public class Tests
         var token = matchService.GetMatches(value, result);
         
         Assert.AreEqual("buildings.name", string.Join(",", token.Select(x => x.Path)));
+    }
+
+    [Test]
+    public void TestThatWeightsConfigParsesCorrectly()
+    {
+        var weights = matchService.GetWeightsConfig();
+        Assert.NotNull(weights);
     }
 }

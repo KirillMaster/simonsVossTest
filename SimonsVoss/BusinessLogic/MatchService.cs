@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace BusinessLogic;
 
@@ -28,5 +29,10 @@ public class MatchService
     {
         return string.Join(".",
             jObjectPath.Split(".").Select(field => field.Split("[")[0]));
+    }
+
+    public WeightsConfig GetWeightsConfig()
+    {
+        return JsonConvert.DeserializeObject<WeightsConfig>(File.ReadAllText("weights_config.json"));
     }
 }

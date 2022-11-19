@@ -10,4 +10,10 @@
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="weights_config.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
