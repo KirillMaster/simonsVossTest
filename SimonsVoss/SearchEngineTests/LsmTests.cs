@@ -37,7 +37,18 @@ public class Tests
     [Test]
     public void TestThatWeightsConfigParsesCorrectly()
     {
-        var weights = matchService.GetWeightsConfig();
+        var weights = matchService.WeightsConfig;
         Assert.NotNull(weights);
     }
+
+    [Test]
+    public void TestThatWeightIsMultipliedForFullMatch()
+    { 
+        var result = repository.Get();
+        var value = "Head Office";
+        var token = matchService.GetMatches(value, result);
+        
+        Assert.AreEqual(90, token.First().Weight);
+    }
+    
 }
