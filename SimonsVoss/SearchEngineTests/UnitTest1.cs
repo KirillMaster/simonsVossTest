@@ -1,3 +1,5 @@
+using Newtonsoft.Json.Linq;
+
 namespace SearchEngineTests;
 
 public class Tests
@@ -10,6 +12,7 @@ public class Tests
     [Test]
     public void Test1()
     {
-        Assert.Pass();
+       var result= JObject.Parse(File.ReadAllText("Database.json"));
+       Assert.NotNull(result);
     }
 }
