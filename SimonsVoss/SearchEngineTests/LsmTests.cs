@@ -30,6 +30,6 @@ public class Tests
         var value = "Head Office";
         var token = matchService.GetMatches(value, result);
         
-        Assert.AreEqual("buildings[0].name", string.Join(",", token.Select(x => x.Path)));
+        Assert.AreEqual("buildings.name", string.Join(",", token.Select(x => x.Path)));
     }
 }
