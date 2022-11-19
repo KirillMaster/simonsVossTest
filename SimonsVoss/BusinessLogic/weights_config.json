@@ -1,0 +1,113 @@
+﻿{
+    "Weights": [
+        
+        {
+            "Path" : "buildings.shortCut",
+            "Weight": 7,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "buildings.name",
+            "Weight": 9,  
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "buildings.description",
+            "Weight": 5,  
+            "TransitiveWeights" : []
+        },
+        
+        {
+            "Path" : "locks.buildingId",
+            "Weight": 0, 
+            "TransitiveWeights" : [
+                {
+                    "Path": "buildings.name",
+                    "Weight": 8
+                },
+                {
+                    "Path": "buildings.shortCut",
+                    "Weight": 5
+                },
+                {
+                    "Path": "buildings.description",
+                    "Weight": 0
+                }]
+        },
+        {
+            "Path" : "locks.type",
+            "Weight": 3,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "locks.name",
+            "Weight": 10,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "locks.serialNumber",
+            "Weight": 8,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "locks.floor",
+            "Weight": 6,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "locks.roomNumber",
+            "Weight": 6,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "locks.description",
+            "Weight": 6,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "groups.name",
+            "Weight": 9,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "groups.description",
+            "Weight": 5,
+            "TransitiveWeights" : []
+        },
+        
+        {
+            "Path" : "media.groupId",
+            "Weight": 0,
+            "TransitiveWeights" : [
+                {
+                    "Path": "group.name",
+                    "Weight": 8
+                },
+                {
+                    "Path": "group.description",
+                    "Weight": 0
+                }
+            ]
+        },
+        {
+            "Path" : "media.type",
+            "Weight": 3,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "media.owner",
+            "Weight": 10,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "media.serialNumber",
+            "Weight": 8,
+            "TransitiveWeights" : []
+        },
+        {
+            "Path" : "media.description",
+            "Weight": 6,
+            "TransitiveWeights" : []
+        }
+    ]
+}
